@@ -6,8 +6,8 @@ Practice using Regular Expressions (re module) to find and extract specific patt
 from text data.
 Practice writing functions with clear inputs and outputs suitable for automated testing.
 """
-import pandas as pd
 import re
+import pandas as pd
 def load_artifact_data(excel_filepath):
     """
     Reads artifact data from a specific sheet ('Main Chamber') in an Excel file,
@@ -69,4 +69,3 @@ if __name__ == '__main__':
         print(f"Found codes: {codes}")
     except FileNotFoundError:
         print(f"Error: File not found at {JOURNAL_FILE}")
-        
