@@ -59,7 +59,7 @@ if __name__ == '__main__':
         print(f"Error: File not found at {TSV_FILE}")
     print(f"\n--- Processing Journal from {JOURNAL_FILE} ---")
     try:
-        with open(journal_file, 'r', encoding='utf-8') as f:
+        with open(JOURNAL_FILE, 'r', encoding='utf-8') as f:
             journal_content = f.read()
         print("\nExtracting Dates...")
         dates = extract_journal_dates(journal_content)
